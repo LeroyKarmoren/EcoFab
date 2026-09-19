@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <!-- ========================= -->
+    <!-- BARRA SUPERIOR -->
+    <!-- ========================= -->
+
+    <nav>
+
+        <img src="img/menu.png" class="menu">
+
+        <div class="search-box">
+
+            <img src="img/search.png" class="search-icon">
+
+            <input
+                type="text"
+                placeholder="Pesquisar..."
+            >
+
+        </div>
+
+
+        <div class="user">
+
+            <img src="img/user.png">
+
+        </div>
+
+    </nav>
+
+
+
+    <!-- ========================= -->
+    <!-- BARRA LATERAL -->
+    <!-- ========================= -->
+
+    <aside class="barra-lateral">
+
+        <div class="menu-sidebar">
+
+            <a href="index.html">
+                Início
+            </a>
+
+            <a href="ranking.html">
+                Ranking
+            </a>
+
+            <a href="denuncias.html">
+                Denúncias
+            </a>
+
+            <a href="solucoes.html">
+                Soluções
+            </a>
+
+            <a href="metas.html" class="ativo">
+                Metas
+            </a>
+
+            <a href="feedback.html">
+                Feedback e Ajuda
+            </a>
+
+        </div>
+
+
+        <!-- USUÁRIO -->
+
+        <div class="usuario-sidebar">
+
+            <img src="img/user.png">
+
+            <div class="usuario-info">
+
+                <strong>
+                    Minha conta
+                </strong>
+
+                <span>
+                    Perfil do usuário
+                </span>
+
+            </div>
+
+        </div>
+
+    </aside>
+
+
+
+    <!-- ========================= -->
+    <!-- FUNDO ESCURO -->
+    <!-- ========================= -->
+
+    <div class="overlay-menu"></div>
+
+
+
+    <!-- ========================= -->
+    <!-- CONTEÚDO -->
+    <!-- ========================= -->
+
+    <main class="pagina-metas">
+
+
+        <!-- ========================= -->
+        <!-- CABEÇALHO -->
+        <!-- ========================= -->
+
+        <section class="metas-header">
+
+            <div class="titulo-metas">
+
+                <span>
+                    PLANEJAMENTO E SUSTENTABILIDADE
+                </span>
+
+                <h1>
+                    METAS AMBIENTAIS
+                </h1>
+
+                <p>
+                    Acompanhe os objetivos ambientais das indústrias,
+                    seus avanços e as ações realizadas para construir
+                    um futuro mais sustentável.
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ========================= -->
+        <!-- RESUMO DAS METAS -->
+        <!-- ========================= -->
+
+        <section class="metas-resumo">
+
+
+            <!-- METAS ATIVAS -->
+
+            <div class="meta-resumo-card">
+
+                <div class="meta-resumo-numero">
+                    12
+                </div>
+
+                <div class="meta-resumo-texto">
+
+                    <strong>
+                        Metas ativas
+                    </strong>
+
+                    <span>
+                        Objetivos registrados
+                    </span>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- EM ANDAMENTO -->
+
+            <div class="meta-resumo-card">
+
+                <div class="meta-resumo-numero">
+                    07
+                </div>
+
+                <div class="meta-resumo-texto">
+
+                    <strong>
+                        Em andamento
+                    </strong>
+
+                    <span>
+                        Metas sendo desenvolvidas
+                    </span>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- CONCLUÍDAS -->
+
+            <div class="meta-resumo-card">
+
+                <div class="meta-resumo-numero">
+                    04
+                </div>
+
+                <div class="meta-resumo-texto">
+
+                    <strong>
+                        Concluídas
+                    </strong>
+
+                    <span>
+                        Objetivos alcançados
+                    </span>
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- ========================= -->
+        <!-- FILTROS -->
+        <!-- ========================= -->
+
+        <section class="metas-filtros">
+
+            <button
+                class="filtro-meta ativo"
+                data-filtro="todas"
+            >
+                Todas
+            </button>
+
+
+            <button
+                class="filtro-meta"
+                data-filtro="andamento"
+            >
+                Em andamento
+            </button>
+
+
+            <button
+                class="filtro-meta"
+                data-filtro="concluida"
+            >
+                Concluídas
+            </button>
+
+        </section>
+
+
+
+        <!-- ========================= -->
+        <!-- LISTA DE METAS -->
+        <!-- ========================= -->
+
+        <section class="lista-metas">
+
+
+            <!-- ========================= -->
+            <!-- META 1 -->
+            <!-- ========================= -->
+
+            <article
+                class="card-meta"
+                data-status="andamento"
+            >
+
+                <div class="card-meta-topo">
+
+                    <div class="meta-nome">
+
+                        <div class="meta-icone">
+                            ♻
+                        </div>
+
+                        <div>
+
+                            <h2>
+                                REDUZIR RESÍDUOS
+                            </h2>
+
+                            <span>
+                                EcoTech
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <strong class="meta-percentual">
+                        75%
+                    </strong>
+
+                </div>
+
+
+
+                <div class="meta-barra">
+
+                    <div
+                        class="meta-progresso"
+                        style="width: 75%;"
+                    ></div>
+
+                </div>
+
+
+
+                <p class="meta-descricao">
+                    Meta: reduzir 30% de resíduos não reciclados.
+                </p>
+
+
+
+                <div class="meta-resultados">
+
+                    <span>
+                        <strong>
+                            22%
+                        </strong>
+                        alcançado
+                    </span>
+
+                    <span>
+                        <strong>
+                            30%
+                        </strong>
+                        objetivo
+                    </span>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- ========================= -->
+            <!-- META 2 -->
+            <!-- ========================= -->
+
+            <article
+                class="card-meta"
+                data-status="andamento"
+            >
+
+                <div class="card-meta-topo">
+
+                    <div class="meta-nome">
+
+                        <div class="meta-icone">
+                            🌱
+                        </div>
+
+                        <div>
+
+                            <h2>
+                                AUMENTAR RECICLAGEM
+                            </h2>
+
+                            <span>
+                                VerdeSul
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <strong class="meta-percentual">
+                        90%
+                    </strong>
+
+                </div>
+
+
+
+                <div class="meta-barra">
+
+                    <div
+                        class="meta-progresso"
+                        style="width: 90%;"
+                    ></div>
+
+                </div>
+
+
+
+                <p class="meta-descricao">
+                    Meta: reciclar 50 toneladas de materiais.
+                </p>
+
+
+
+                <div class="meta-resultados">
+
+                    <span>
+                        <strong>
+                            45 t
+                        </strong>
+                        alcançadas
+                    </span>
+
+                    <span>
+                        <strong>
+                            50 t
+                        </strong>
+                        objetivo
+                    </span>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- ========================= -->
+            <!-- META 3 -->
+            <!-- ========================= -->
+
+            <article
+                class="card-meta"
+                data-status="concluida"
+            >
+
+                <div class="card-meta-topo">
+
+                    <div class="meta-nome">
+
+                        <div class="meta-icone">
+                            💧
+                        </div>
+
+                        <div>
+
+                            <h2>
+                                REDUZIR CONSUMO DE ÁGUA
+                            </h2>
+
+                            <span>
+                                EcoTech
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <strong class="meta-percentual">
+                        100%
+                    </strong>
+
+                </div>
+
+
+
+                <div class="meta-barra">
+
+                    <div
+                        class="meta-progresso"
+                        style="width: 100%;"
+                    ></div>
+
+                </div>
+
+
+
+                <p class="meta-descricao">
+                    Meta: reduzir 20% do consumo de água.
+                </p>
+
+
+
+                <div class="meta-resultados">
+
+                    <span>
+                        <strong>
+                            20%
+                        </strong>
+                        alcançado
+                    </span>
+
+                    <span>
+                        <strong>
+                            20%
+                        </strong>
+                        objetivo
+                    </span>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- ========================= -->
+            <!-- META 4 -->
+            <!-- ========================= -->
+
+            <article
+                class="card-meta"
+                data-status="concluida"
+            >
+
+                <div class="card-meta-topo">
+
+                    <div class="meta-nome">
+
+                        <div class="meta-icone">
+                            🌳
+                        </div>
+
+                        <div>
+
+                            <h2>
+                                PLANTIO DE ÁRVORES
+                            </h2>
+
+                            <span>
+                                VerdeSul
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <strong class="meta-percentual">
+                        100%
+                    </strong>
+
+                </div>
+
+
+
+                <div class="meta-barra">
+
+                    <div
+                        class="meta-progresso"
+                        style="width: 100%;"
+                    ></div>
+
+                </div>
+
+
+
+                <p class="meta-descricao">
+                    Meta: plantar 1.000 árvores.
+                </p>
+
+
+
+                <div class="meta-resultados">
+
+                    <span>
+                        <strong>
+                            1.000
+                        </strong>
+                        alcançadas
+                    </span>
+
+                    <span>
+                        <strong>
+                            1.000
+                        </strong>
+                        objetivo
+                    </span>
+
+                </div>
+
+            </article>
+
+
+        </section>
+
+
+    </main>
+
+<div class="space"></div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-box">
+                <h2>ECOFAB</h2>
+                <p>
+                    Conectando pessoas, transformando atitudes e construindo um futuro mais sustentável.
+                </p>
+            </div>
+
+            <div class="footer-box redes-sociais">
+    <h3>Redes Sociais</h3>
+
+    <div class="icones-redes">
+        <a href="#">
+            <img src="img/instagram.png">
+        </a>
+
+        <a href="#">
+            <img src="img/facebook.png">
+        </a>
+
+        <a href="#">
+            <img src="img/twitter.png">
+        </a>
+    </div>
+</div>
+
+            <div class="footer-box">
+                <h3>Contato</h3>
+                <p>(00) 00000-0000</p>
+                <p>ecofab@email.com</p>
+            </div>
+        </div>
+
+        <div class="espaco"></div>
+
+        <p class="direitos">© 2026 EcoFab. Todos os direitos reservados.</p>
+    </footer>
+
+    <button id="btnTopo" onclick="voltarAoTopo()" aria-label="Voltar ao topo">
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M12 19V5"></path>
+        <path d="M6 11l6-6 6 6"></path>
+    </svg>
+    </button>
+
+<script src="script.js"></script>
+
+</body>
+</html>

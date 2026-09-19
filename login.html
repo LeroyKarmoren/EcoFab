@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECOFAB - Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+
+
+
+
+<body>
+
+    <div class="login-container">
+
+        <img src="img/ECOFAB_logo.png" class="logo-login">
+
+        <!-- LOGIN -->
+        <div id="login">
+
+            <h1>Entrar</h1>
+
+            <input
+                type="text"
+                id="emailLogin"
+                placeholder="Nome de usuário"
+            >
+
+            <input
+                type="password"
+                id="senhaLogin"
+                placeholder="Senha"
+            >
+
+            <button type="button" onclick="fazerLogin()">
+                Entrar
+            </button>
+
+            <p>
+                Não possui uma conta?
+                <a href="#" onclick="mostrarCadastro(); return false;">
+                    Cadastre-se
+                </a>
+            </p>
+
+        </div>
+
+
+        <!-- CADASTRO -->
+        <div id="cadastro" style="display: none;">
+
+            <h1>Criar conta</h1>
+
+            <input
+                type="text"
+                id="nome"
+                placeholder="Nome de usuário"
+            >
+
+            <input
+                type="email"
+                id="email"
+                placeholder="E-mail"
+            >
+
+            <input
+                type="password"
+                id="senha"
+                placeholder="Senha"
+            >
+
+            <h3>Você é:</h3>
+
+            <div class="tipos">
+
+                <label>
+                    <input
+                        type="radio"
+                        name="tipo"
+                        value="Morador"
+                        onchange="verificarTipo()"
+                    >
+                    Morador
+                </label>
+
+                <label>
+                    <input
+                        type="radio"
+                        name="tipo"
+                        value="Funcionário"
+                        onchange="verificarTipo()"
+                    >
+                    Funcionário
+                </label>
+
+                <label>
+                    <input
+                        type="radio"
+                        name="tipo"
+                        value="Dono de empresa"
+                        onchange="verificarTipo()"
+                    >
+                    Dono de empresa
+                </label>
+
+            </div>
+
+
+            <div id="empresa-container" style="display: none;">
+
+                <input
+                    type="text"
+                    id="empresa"
+                    placeholder="Nome da empresa"
+                >
+
+            </div>
+
+            <button type="button" onclick="cadastrar()">
+                Cadastrar
+            </button>
+
+
+            <p>
+                Já possui uma conta?
+                <a href="#" onclick="mostrarLogin(); return false;">
+                    Entrar
+                </a>
+            </p>
+
+        </div>
+
+    </div>
+
+    <script src="login.js"></script>
+
+</body>
+</html>

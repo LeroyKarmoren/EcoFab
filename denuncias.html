@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Denúncias</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ========================= -->
+    <!-- BARRA SUPERIOR -->
+    <!-- ========================= -->
+
+    <nav>
+
+        <img src="img/menu.png" class="menu">
+
+        <div class="search-box">
+            <img src="img/search.png" class="search-icon">
+            <input type="text" placeholder="Pesquisar...">
+        </div>
+
+        <div class="user">
+            <img src="img/user.png">
+        </div>
+
+    </nav>
+
+
+    <!-- ========================= -->
+    <!-- BARRA LATERAL -->
+    <!-- ========================= -->
+
+    <aside class="barra-lateral">
+
+        <div class="menu-sidebar">
+
+            <a href="index.html">
+                Início
+            </a>
+
+            <a href="ranking.html">
+                Ranking
+            </a>
+
+            <a href="denuncias.html" class="ativo">
+                Denúncias
+            </a>
+
+            <a href="solucoes.html">
+                Soluções
+            </a>
+
+            <a href="metas.html">
+                Metas
+            </a>
+
+            <a href="feedback.html">
+                Feedback e Ajuda
+            </a>
+
+        </div>
+
+
+        <!-- USUÁRIO -->
+
+        <div class="usuario-sidebar">
+
+            <img src="img/user.png">
+
+            <div class="usuario-info">
+
+                <strong>
+                    Minha conta
+                </strong>
+
+                <span>
+                    Perfil do usuário
+                </span>
+
+            </div>
+
+        </div>
+
+    </aside>
+
+
+    <!-- FUNDO ESCURO -->
+
+    <div class="overlay-menu"></div>
+
+
+    <!-- ========================= -->
+    <!-- CONTEÚDO -->
+    <!-- ========================= -->
+
+    <main class="pagina-denuncias">
+
+
+        <!-- ========================= -->
+        <!-- CABEÇALHO -->
+        <!-- ========================= -->
+
+        <section class="denuncias-header">
+
+            <span>
+                PARTICIPAÇÃO DA COMUNIDADE
+            </span>
+
+            <h1>
+                Fazer uma denúncia
+            </h1>
+
+            <p>
+                Encontrou um problema ambiental?
+                Registre uma denúncia e ajude a comunidade
+                a identificar situações de descarte irregular.
+            </p>
+
+        </section>
+
+
+        <!-- ========================= -->
+        <!-- FORMULÁRIO -->
+        <!-- ========================= -->
+
+        <section class="box-denuncia">
+
+            <div class="titulo-box">
+
+                <h2>
+                    Registrar denúncia
+                </h2>
+
+                <p>
+                    Preencha as informações abaixo para
+                    registrar o problema encontrado.
+                </p>
+
+            </div>
+
+
+            <form>
+
+
+                <!-- TIPO -->
+
+                <div class="campo">
+
+                    <label>
+                        Tipo de problema
+                    </label>
+
+                    <select>
+
+                        <option>
+                            Selecione uma opção
+                        </option>
+
+                        <option>
+                            Descarte irregular
+                        </option>
+
+                        <option>
+                            Acúmulo de resíduos
+                        </option>
+
+                        <option>
+                            Poluição
+                        </option>
+
+                        <option>
+                            Queimada
+                        </option>
+
+                        <option>
+                            Outro
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- LOCAL -->
+
+                <div class="campo">
+
+                    <label>
+                        Local do problema
+                    </label>
+
+                    <input
+                        type="text"
+                        placeholder="Ex.: Bairro Central, Rua das Flores..."
+                    >
+
+                </div>
+
+
+                <!-- DATA -->
+
+                <div class="campo">
+
+                    <label>
+                        Data do ocorrido
+                    </label>
+
+                    <input
+                        type="text"
+                        placeholder="Ex.: 15/08/2026"
+                    >
+
+                </div>
+
+
+                <!-- DESCRIÇÃO -->
+
+                <div class="campo campo-largo">
+
+                    <label>
+                        Descrição
+                    </label>
+
+                    <textarea
+                        placeholder="Explique o que aconteceu..."
+                    ></textarea>
+
+                </div>
+
+
+                <!-- FOTO / VÍDEO -->
+
+                <div class="campo campo-largo">
+
+                    <label>
+                        Foto ou vídeo
+                    </label>
+
+                    <div class="upload-area demonstrativo">
+
+                        <span>
+                            Anexar foto ou vídeo
+                        </span>
+
+                        <small>
+                            Esta função estará disponível futuramente.
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+                <!-- BOTÃO -->
+
+                <button
+                    type="button"
+                    class="btn-enviar-denuncia"
+                >
+                    Enviar denúncia
+                </button>
+
+
+            </form>
+
+        </section>
+
+
+        <!-- ========================= -->
+        <!-- ASSISTENTE -->
+        <!-- ========================= -->
+
+        <section class="assistente-ecofab">
+
+            <div class="assistente-header">
+
+                <div>
+
+                    <span>
+                        ASSISTENTE VIRTUAL
+                    </span>
+
+                    <h2>
+                        ♻ Assistente EcoFab
+                    </h2>
+
+                </div>
+
+                <div class="status-assistente">
+
+                    <span></span>
+
+                    Online
+
+                </div>
+
+            </div>
+
+
+            <p class="assistente-descricao">
+                Tire suas dúvidas sobre denúncias,
+                reciclagem e descarte de resíduos.
+            </p>
+
+
+            <!-- CHAT DEMONSTRATIVO -->
+
+            <div class="chat-box">
+
+                <div class="mensagem mensagem-ia">
+
+                    <strong>
+                        EcoFab
+                    </strong>
+
+                    <p>
+                        Olá! Como posso ajudar?
+                    </p>
+
+                </div>
+
+
+                <div class="mensagem mensagem-usuario">
+
+                    <strong>
+                        Você
+                    </strong>
+
+                    <p>
+                        Como faço uma denúncia?
+                    </p>
+
+                </div>
+
+
+                <div class="mensagem mensagem-ia">
+
+                    <strong>
+                        EcoFab
+                    </strong>
+
+                    <p>
+                        Você pode registrar o problema
+                        através do formulário acima.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- CAMPO DO CHAT -->
+
+            <div class="chat-input">
+
+                <input
+                    type="text"
+                    placeholder="Digite sua dúvida..."
+                >
+
+                <button type="button">
+                    ➤
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================= -->
+        <!-- MINHAS DENÚNCIAS -->
+        <!-- ========================= -->
+
+        <section class="minhas-denuncias">
+
+            <div class="titulo-minhas">
+
+                <span>
+                    ACOMPANHAMENTO
+                </span>
+
+                <h2>
+                    Denúncias da Comunidade
+                </h2>
+
+                <p>
+                    Acompanhe algumas das denúncias
+                    registradas pela comunidade.
+                </p>
+
+            </div>
+
+
+            <div class="lista-minhas">
+
+
+                <!-- DENÚNCIA 1 -->
+
+                <article class="minha-denuncia">
+
+                    <div class="codigo-denuncia">
+                        #0245
+                    </div>
+
+                    <div class="info-denuncia">
+
+                        <h3>
+                            Descarte irregular
+                        </h3>
+
+                        <span>
+                            Bairro Central
+                        </span>
+
+                        <small>
+                            Enviada em 15/08/2026
+                        </small>
+
+                    </div>
+
+                    <div class="status-denuncia analise-status">
+                        Em análise
+                    </div>
+
+                </article>
+
+
+                <!-- DENÚNCIA 2 -->
+
+                <article class="minha-denuncia">
+
+                    <div class="codigo-denuncia">
+                        #0241
+                    </div>
+
+                    <div class="info-denuncia">
+
+                        <h3>
+                            Resíduos em área pública
+                        </h3>
+
+                        <span>
+                            Jardim Verde
+                        </span>
+
+                        <small>
+                            Enviada em 12/08/2026
+                        </small>
+
+                    </div>
+
+                    <div class="status-denuncia andamento-status">
+                        Em andamento
+                    </div>
+
+                </article>
+
+
+                <!-- DENÚNCIA 3 -->
+
+                <article class="minha-denuncia">
+
+                    <div class="codigo-denuncia">
+                        #0238
+                    </div>
+
+                    <div class="info-denuncia">
+
+                        <h3>
+                            Acúmulo de materiais
+                        </h3>
+
+                        <span>
+                            Vila Nova
+                        </span>
+
+                        <small>
+                            Enviada em 10/08/2026
+                        </small>
+
+                    </div>
+
+                    <div class="status-denuncia resolvido-status">
+                        Resolvida
+                    </div>
+
+                </article>
+
+            </div>
+
+
+        <a href="denuncias.html" class="btn-todas-denuncias">
+    Ver todas as denúncias
+    </a>
+        </section>
+
+    </main>
+
+    
+
+    <div class="space"></div>
+
+    <div class="space"></div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-box">
+                <h2>ECOFAB</h2>
+                <p>
+                    Conectando pessoas, transformando atitudes e construindo um futuro mais sustentável.
+                </p>
+            </div>
+
+            <div class="footer-box redes-sociais">
+    <h3>Redes Sociais</h3>
+
+    <div class="icones-redes">
+        <a href="#">
+            <img src="img/instagram.png">
+        </a>
+
+        <a href="#">
+            <img src="img/facebook.png">
+        </a>
+
+        <a href="#">
+            <img src="img/twitter.png">
+        </a>
+    </div>
+</div>
+
+            <div class="footer-box">
+                <h3>Contato</h3>
+                <p>(00) 00000-0000</p>
+                <p>ecofab@email.com</p>
+            </div>
+        </div>
+
+        <div class="espaco"></div>
+
+        <p class="direitos">© 2026 EcoFab. Todos os direitos reservados.</p>
+    </footer>
+
+    <button id="btnTopo" onclick="voltarAoTopo()" aria-label="Voltar ao topo">
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M12 19V5"></path>
+        <path d="M6 11l6-6 6 6"></path>
+    </svg>
+    </button>
+
+<script src="script.js"></script>
+
+</body>
+</html>

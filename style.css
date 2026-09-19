@@ -1,0 +1,3339 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#ececec;
+}
+
+/* NAVBAR */
+
+nav{
+    width:100%;
+    height:70px;
+    background:#038509;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:0 25px;
+}
+
+/* MENU */
+
+.menu{
+    width:38px;
+    cursor:pointer;
+}
+
+/* PESQUISA */
+
+.search-box{
+    width:230px;
+    height:40px;
+    background:white;
+    border-radius:25px;
+    display:flex;
+    align-items:center;
+    padding:0 15px;
+    gap:10px;
+}
+
+/* ÍCONE PESQUISA */
+
+.search-icon{
+    width:18px;
+}
+
+/* INPUT */
+
+.search-box input{
+    width:100%;
+    border:none;
+    outline:none;
+    background:transparent;
+    color:black;
+    font-size:15px;
+}
+
+.search-box input::placeholder{
+    color:#777;
+}
+
+/* USUÁRIO */
+
+.user{
+    width:50px;
+    height:50px;
+    background:white;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    overflow:hidden;
+    cursor:pointer;
+}
+
+/* IMAGEM USUÁRIO */
+
+.user img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+/* HERO */
+
+.hero{
+    position:relative;
+    width:100%;
+    height:530px;
+    background:#ddd;
+    overflow:hidden;
+}
+
+/* IMAGEM */
+
+.food-img{
+    position:absolute;
+    top:0;
+    right:0;
+    width:60%;
+    height:100%;
+    object-fit:cover;
+    z-index:1;
+}
+
+/* DEGRADE */
+
+.overlay{
+    position:absolute;
+    inset:0;
+    z-index:2;
+    background:
+    linear-gradient(
+        to right,
+        rgba(208,208,208,1) 0%,
+        rgba(208,208,208,1) 35%,
+        rgba(208,208,208,0.95) 55%,
+        rgba(208,208,208,0.85) 70%,
+        rgba(208,208,208,0.60) 85%,
+        rgba(208,208,208,0.25) 100%
+    );
+}
+
+/* CONTEÚDO */
+
+.hero-content{
+    position:relative;
+    z-index:3;
+    width:100%;
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    padding-left:120px;
+}
+
+/* LOGO */
+
+.logo{
+    width:250px;
+    margin-bottom:20px;
+}
+
+/* TEXTO */
+
+.hero-content h1{
+    color:#038509;
+    font-size:60px;
+    letter-spacing:4px;
+}
+
+/* APRESENTAÇÃO */
+
+.intro{
+    width:100%;
+    background:#ececec;
+    padding:100px 80px 40px 80px;
+    display:flex;
+    justify-content:center;
+}
+
+.intro-text{
+    max-width:900px;
+    text-align:center;
+}
+
+.intro-text h2{
+    color:#038509;
+    font-size:52px;
+    margin-bottom:30px;
+}
+
+.intro-text p{
+    color:#444;
+    font-size:22px;
+    line-height:1.8;
+    margin-bottom:25px;
+}
+
+/* ESPAÇO */
+
+.space{
+    width:100%;
+    height:80px;
+}
+
+/* RODAPÉ */
+
+.footer{
+    width:100%;
+    background:#038509;
+    padding:60px 80px;
+}
+
+.footer-content{
+    display:flex;
+    justify-content:space-between;
+    gap:40px;
+    flex-wrap:wrap;
+}
+
+.footer-box{
+    max-width:300px;
+}
+
+.footer-box h2,
+.footer-box h3{
+    color:white;
+    margin-bottom:20px;
+}
+
+.footer-box p{
+    color:white;
+    line-height:1.8;
+}
+
+
+
+
+
+.como-funciona {
+    width: 100%;
+    padding: 80px 8%;
+    background: #f4f4f4;
+    text-align: center;
+}
+
+/* TÍTULO */
+
+.como-funciona h2 {
+    margin: 0;
+    font-size: 42px;
+    color: #008f08;
+}
+
+.subtitulo {
+    max-width: 700px;
+    margin: 15px auto 60px;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #444;
+}
+
+
+/* ETAPAS */
+
+.etapas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+/* CADA ETAPA */
+
+.etapa {
+    width: 280px;
+    padding: 30px 20px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.etapa:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+
+/* NÚMERO */
+
+.numero {
+    font-size: 14px;
+    font-weight: bold;
+    color: #008f08;
+    margin-bottom: 10px;
+}
+
+
+/* ÍCONE */
+
+.icone {
+    width: 70px;
+    height: 70px;
+
+    margin: 0 auto 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #008f08;
+    color: white;
+
+    font-size: 32px;
+}
+
+
+/* TÍTULO DA ETAPA */
+
+.etapa h3 {
+    margin: 0 0 12px;
+
+    font-size: 24px;
+
+    color: #008f08;
+}
+
+
+/* TEXTO */
+
+.etapa p {
+    margin: 0;
+
+    font-size: 16px;
+    line-height: 1.6;
+
+    color: #444;
+}
+
+
+/* LINHA ENTRE AS ETAPAS */
+
+.linha {
+    width: 80px;
+    height: 3px;
+
+    background: #008f08;
+}
+
+
+
+/* ============================= */
+/* DENÚNCIAS DA COMUNIDADE */
+/* ============================= */
+
+.denuncias-comunidade {
+    width: 100%;
+    padding: 80px 8%;
+    background: #ffffff;
+    text-align: center;
+}
+
+
+/* TÍTULO */
+
+.denuncias-comunidade h2 {
+    margin: 0;
+    font-size: 42px;
+    color: #008f08;
+}
+
+.subtitulo-denuncias {
+    max-width: 700px;
+    margin: 15px auto 55px;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #444;
+}
+
+
+/* CARDS */
+
+.cards-denuncias {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 25px;
+
+    max-width: 1200px;
+    margin: 0 auto 40px;
+}
+
+
+/* CARD */
+
+.card-denuncia {
+    width: 100%;
+    max-width: 350px;
+
+    padding: 25px;
+
+    background: #f8f8f8;
+
+    border-radius: 16px;
+
+    border: 1px solid #e5e5e5;
+
+    text-align: left;
+
+    display: flex;
+    flex-direction: column;
+
+    height: 440px;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.card-denuncia:hover {
+    transform: translateY(-7px);
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.10);
+}
+
+
+/* TOPO DO CARD */
+
+.topo-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 20px;
+}
+
+
+/* STATUS */
+
+.status {
+    padding: 6px 12px;
+
+    border-radius: 20px;
+
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.analise {
+    background: #fff3cd;
+    color: #8a6500;
+}
+
+.andamento {
+    background: #dbeafe;
+    color: #2457a6;
+}
+
+.resolvido {
+    background: #dcfce7;
+    color: #17753b;
+}
+
+
+/* CÓDIGO */
+
+.codigo {
+    font-size: 13px;
+    color: #777;
+}
+
+
+/* ÍCONE */
+
+.icone-denuncia {
+    width: 65px;
+    height: 65px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 18px;
+
+    border-radius: 50%;
+
+    background: #008f08;
+
+    font-size: 30px;
+}
+
+
+/* TÍTULO DO CARD */
+
+.card-denuncia h3 {
+    margin: 0 0 12px;
+
+    font-size: 21px;
+    color: #222;
+}
+
+
+/* DESCRIÇÃO */
+
+.descricao {
+    margin: 0 0 20px;
+
+    font-size: 15px;
+    line-height: 1.5;
+
+    color: #555;
+}
+
+
+/* INFORMAÇÕES */
+
+.informacoes {
+    display: flex;
+    flex-direction: column;
+
+    gap: 8px;
+
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+
+    border-bottom: 1px solid #ddd;
+
+    font-size: 14px;
+    color: #666;
+}
+
+
+/* BOTÃO DO CARD */
+
+.btn-ver-denuncia {
+    width: 100%;
+
+    padding: 11px;
+
+    border: 2px solid #008f08;
+    border-radius: 8px;
+
+    background: transparent;
+
+    color: #008f08;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    margin-top: auto;
+
+    transition: 0.2s;
+}
+
+.btn-ver-denuncia:hover {
+    background: #008f08;
+    color: white;
+}
+
+
+/* BOTÃO TODAS AS DENÚNCIAS */
+
+.btn-todas-denuncias {
+    padding: 13px 28px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: #008f08;
+    color: white;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.btn-todas-denuncias:hover {
+    background: #007207;
+}
+
+
+/* ============================= */
+/* RESPONSIVIDADE */
+/* ============================= */
+
+@media (max-width: 900px) {
+
+    .cards-denuncias {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-denuncia {
+        width: 90%;
+        max-width: 500px;
+        height: auto;
+        min-height: 440px;
+    }
+}
+
+
+@media (max-width: 500px) {
+
+    .denuncias-comunidade {
+        padding: 60px 5%;
+    }
+
+    .denuncias-comunidade h2 {
+        font-size: 34px;
+    }
+
+    .subtitulo-denuncias {
+        font-size: 16px;
+    }
+
+}
+
+
+
+/* ========================= */
+/* BARRA LATERAL */
+/* ========================= */
+
+.barra-lateral {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 280px;
+    height: 100vh;
+
+    background: #008f08;
+
+    padding: 90px 20px 20px;
+
+    display: flex;
+    flex-direction: column;
+
+    box-shadow: 4px 0 15px rgba(0, 0, 0, 0.25);
+
+    z-index: 2001;
+
+    transform: translateX(-100%);
+
+    transition: transform 0.3s ease;
+}
+
+
+/* BARRA ABERTA */
+
+.barra-lateral.aberta {
+    transform: translateX(0);
+}
+
+
+/* ========================= */
+/* LINKS */
+/* ========================= */
+
+.menu-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.menu-sidebar a {
+    display: block;
+
+    padding: 14px 15px;
+
+    border-radius: 8px;
+
+    text-decoration: none;
+
+    color: white;
+
+    font-size: 17px;
+
+    transition: 0.2s;
+}
+
+.menu-sidebar a:hover {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+
+/* ========================= */
+/* USUÁRIO */
+/* ========================= */
+
+.usuario-sidebar {
+    margin-top: auto;
+
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 15px;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+
+    color: white;
+
+    cursor: pointer;
+}
+
+.usuario-sidebar img {
+    width: 42px;
+    height: 42px;
+
+    border-radius: 50%;
+
+    background: white;
+
+    object-fit: cover;
+}
+
+.usuario-info {
+    display: flex;
+    flex-direction: column;
+
+    gap: 3px;
+}
+
+.usuario-info strong {
+    font-size: 16px;
+}
+
+.usuario-info span {
+    font-size: 13px;
+
+    opacity: 0.8;
+}
+
+
+/* ========================= */
+/* FUNDO ESCURO */
+/* ========================= */
+
+.overlay-menu {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100vh;
+
+    background: rgba(0, 0, 0, 0.45);
+
+    z-index: 2000;
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    transition:
+        opacity 0.3s ease,
+        visibility 0.3s ease;
+}
+
+
+/* OVERLAY VISÍVEL */
+
+.overlay-menu.aberta {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.btn-topo {
+    position: fixed;
+
+    right: 25px;
+    bottom: 25px;
+
+    width: 45px;
+    height: 45px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: #008f08;
+    color: white;
+
+    font-size: 24px;
+
+    cursor: pointer;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: 0.3s;
+
+    z-index: 1500;
+}
+
+.btn-topo:hover {
+    background: #007207;
+}
+
+.btn-topo.visivel {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+
+
+
+
+
+/* ================================================= */
+/* BARRA SUPERIOR */
+/* ================================================= */
+
+nav {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 70px;
+
+    display: flex;
+    align-items: center;
+
+    background: #008f08;
+
+    z-index: 3000;
+}
+
+
+/* MENU */
+
+nav .menu {
+    width: 28px;
+    height: 28px;
+
+    margin-left: 20px;
+
+    cursor: pointer;
+}
+
+
+/* PESQUISA */
+
+.search-box {
+    position: absolute;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 350px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 15px;
+
+    background: white;
+
+    border-radius: 20px;
+}
+
+.search-icon {
+    width: 18px;
+    height: 18px;
+
+    margin-right: 10px;
+}
+
+.search-box input {
+    width: 100%;
+
+    border: none;
+    outline: none;
+
+    font-size: 14px;
+}
+
+
+/* USUÁRIO DO TOPO */
+
+nav .user {
+    width: 50px;
+    height: 50px;
+
+    background: transparent;
+
+    border-radius: 0;
+
+    overflow: visible;
+}
+
+
+nav .user img {
+    width: 50px;
+    height: 50px;
+
+    object-fit: cover;
+
+    border-radius: 0;
+}
+
+
+/* ================================================= */
+/* BARRA LATERAL */
+/* ================================================= */
+
+.barra-lateral {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 280px;
+    height: 100vh;
+
+    padding: 90px 20px 20px;
+
+    display: flex;
+    flex-direction: column;
+
+    background: #008f08;
+
+    box-shadow:
+        4px 0 15px rgba(0, 0, 0, 0.25);
+
+    z-index: 4000;
+
+    transform: translateX(-100%);
+
+    transition:
+        transform 0.3s ease;
+}
+
+
+/* BARRA ABERTA */
+
+.barra-lateral.aberta {
+    transform: translateX(0);
+}
+
+
+/* ================================================= */
+/* LINKS DA BARRA */
+/* ================================================= */
+
+.menu-sidebar {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 8px;
+}
+
+.menu-sidebar a {
+    display: block;
+
+    padding: 14px 15px;
+
+    border-radius: 8px;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 17px;
+
+    transition:
+        background 0.2s ease;
+}
+
+.menu-sidebar a:hover {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+
+/* LINK ATIVO */
+
+.menu-sidebar a.ativo {
+    background: white;
+
+    color: #008f08;
+
+    font-weight: bold;
+}
+
+
+/* ================================================= */
+/* USUÁRIO DA BARRA */
+/* ================================================= */
+
+.usuario-sidebar {
+    margin-top: auto;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 15px;
+
+    border-top:
+        1px solid rgba(255, 255, 255, 0.3);
+
+    color: white;
+
+    cursor: pointer;
+}
+
+.usuario-sidebar img {
+    width: 42px;
+    height: 42px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+
+    background: white;
+}
+
+.usuario-info {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 3px;
+}
+
+.usuario-info strong {
+    font-size: 16px;
+}
+
+.usuario-info span {
+    font-size: 13px;
+
+    opacity: 0.8;
+}
+
+
+/* ================================================= */
+/* FUNDO ESCURO */
+/* ================================================= */
+
+.overlay-menu {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100vh;
+
+    background: rgba(0, 0, 0, 0.45);
+
+    z-index: 3500;
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    transition:
+        opacity 0.3s ease,
+        visibility 0.3s ease;
+}
+
+.overlay-menu.aberta {
+    opacity: 1;
+
+    visibility: visible;
+}
+
+
+/* ================================================= */
+/* PÁGINA DO RANKING */
+/* ================================================= */
+
+.pagina-ranking {
+    padding: 120px 8% 70px;
+}
+
+
+/* CABEÇALHO */
+
+.ranking-header {
+    max-width: 1200px;
+
+    margin: 0 auto 50px;
+}
+
+.titulo-ranking {
+    text-align: left;
+}
+
+.titulo-ranking > span {
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    color: #008f08;
+}
+
+.titulo-ranking h1 {
+    margin: 8px 0 10px;
+
+    font-size: 48px;
+
+    color: #202020;
+}
+
+.titulo-ranking p {
+    margin: 0;
+
+    max-width: 600px;
+
+    font-size: 18px;
+
+    line-height: 1.6;
+
+    color: #666;
+}
+
+
+/* ================================================= */
+/* RANKING + EXPLICAÇÃO */
+/* ================================================= */
+
+.ranking-conteudo {
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        1.5fr 1fr;
+
+    gap: 35px;
+
+    align-items: start;
+}
+
+
+/* ================================================= */
+/* LISTA TOP 10 */
+/* ================================================= */
+
+.lista-ranking {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 14px;
+
+    max-height: 700px;
+
+    overflow-y: auto;
+
+    padding-right: 8px;
+}
+
+
+/* BARRA DE ROLAGEM */
+
+.lista-ranking::-webkit-scrollbar {
+    width: 7px;
+}
+
+.lista-ranking::-webkit-scrollbar-track {
+    background: #eeeeee;
+
+    border-radius: 10px;
+}
+
+.lista-ranking::-webkit-scrollbar-thumb {
+    background: #008f08;
+
+    border-radius: 10px;
+}
+
+
+/* ================================================= */
+/* EMPRESAS */
+/* ================================================= */
+
+.empresa {
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+
+    padding: 20px 24px;
+
+    background: white;
+
+    border: 1px solid #e5e5e5;
+
+    border-radius: 16px;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.empresa:hover {
+    transform: translateX(5px);
+
+    box-shadow:
+        0 8px 20px
+        rgba(0, 0, 0, 0.08);
+}
+
+
+/* ================================================= */
+/* DESTAQUE DOS 3 PRIMEIROS */
+/* ================================================= */
+
+.primeiro {
+    background:
+        linear-gradient(
+            135deg,
+            #f4fff4,
+            #ffffff
+        );
+
+    border:
+        2px solid #008f08;
+}
+
+.segundo {
+    background:
+        linear-gradient(
+            135deg,
+            #f7f7f7,
+            #ffffff
+        );
+}
+
+.terceiro {
+    background:
+        linear-gradient(
+            135deg,
+            #fffaf5,
+            #ffffff
+        );
+}
+
+
+/* ================================================= */
+/* POSIÇÃO */
+/* ================================================= */
+
+.medalha {
+    width: 50px;
+    height: 50px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+
+    background: #eeeeee;
+
+    font-size: 17px;
+
+    font-weight: bold;
+
+    color: #555;
+}
+
+.primeiro .medalha {
+    background: #d8b34d;
+
+    color: white;
+}
+
+.segundo .medalha {
+    background: #999999;
+
+    color: white;
+}
+
+.terceiro .medalha {
+    background: #b47a52;
+
+    color: white;
+}
+
+
+/* ================================================= */
+/* INFORMAÇÕES DA EMPRESA */
+/* ================================================= */
+
+.empresa-info {
+    flex: 1;
+
+    min-width: 0;
+}
+
+.empresa-info h3 {
+    margin: 0 0 4px;
+
+    font-size: 21px;
+
+    color: #222;
+}
+
+.empresa-info > span {
+    font-size: 14px;
+
+    color: #777;
+}
+
+
+/* ================================================= */
+/* BARRA DE PROGRESSO */
+/* ================================================= */
+
+.barra-progresso {
+    width: 100%;
+
+    height: 7px;
+
+    margin-top: 12px;
+
+    overflow: hidden;
+
+    border-radius: 10px;
+
+    background: #e7e7e7;
+}
+
+.progresso {
+    height: 100%;
+
+    border-radius: 10px;
+
+    background: #008f08;
+}
+
+
+/* ================================================= */
+/* PONTOS */
+/* ================================================= */
+
+.pontos {
+    display: flex;
+
+    align-items: baseline;
+
+    gap: 3px;
+}
+
+.pontos strong {
+    font-size: 30px;
+
+    color: #008f08;
+}
+
+.pontos span {
+    font-size: 13px;
+
+    color: #888;
+}
+
+
+/* ================================================= */
+/* EXPLICAÇÃO */
+/* ================================================= */
+
+.explicacao-ranking {
+    padding: 30px;
+
+    background: #f5f8f5;
+
+    border: 1px solid #dfe9df;
+
+    border-radius: 18px;
+}
+
+.mini-titulo {
+    font-size: 12px !important;
+
+    font-weight: bold;
+
+    letter-spacing: 1.5px;
+
+    color: #008f08 !important;
+}
+
+.explicacao-ranking h2 {
+    margin: 7px 0 12px;
+
+    font-size: 29px;
+
+    color: #222;
+}
+
+.explicacao-ranking > p {
+    margin: 0 0 25px;
+
+    line-height: 1.6;
+
+    color: #666;
+}
+
+
+/* ================================================= */
+/* ITENS DA PONTUAÇÃO */
+/* ================================================= */
+
+.pontuacao-item {
+    padding: 16px 0;
+
+    border-bottom:
+        1px solid #dfe5df;
+}
+
+.pontuacao-topo {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 15px;
+}
+
+.pontuacao-item h3 {
+    margin: 0;
+
+    font-size: 16px;
+
+    color: #222;
+}
+
+.pontuacao-topo strong {
+    font-size: 15px;
+
+    color: #008f08;
+
+    white-space: nowrap;
+}
+
+.pontuacao-item p {
+    margin: 7px 0 0;
+
+    font-size: 14px;
+
+    line-height: 1.5;
+
+    color: #777;
+}
+
+
+/* ================================================= */
+/* TOTAL DE PONTOS */
+/* ================================================= */
+
+.total-pontos {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 3px;
+
+    margin-top: 22px;
+
+    padding: 17px;
+
+    border-radius: 12px;
+
+    background: #008f08;
+
+    color: white;
+}
+
+.total-pontos span {
+    font-size: 11px;
+
+    letter-spacing: 1.5px;
+}
+
+.total-pontos strong {
+    font-size: 26px;
+}
+
+
+/* ================================================= */
+/* RESPONSIVIDADE */
+/* ================================================= */
+
+@media (max-width: 900px) {
+
+    .search-box {
+        width: 280px;
+    }
+
+    .pagina-ranking {
+        padding:
+            110px 5% 50px;
+    }
+
+    .ranking-conteudo {
+        grid-template-columns: 1fr;
+    }
+
+    .lista-ranking {
+        max-height: none;
+
+        overflow-y: visible;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    nav {
+        height: 65px;
+    }
+
+    nav .menu {
+        width: 24px;
+        height: 24px;
+
+        margin-left: 15px;
+    }
+
+    .search-box {
+        width: 190px;
+        height: 35px;
+    }
+
+    .search-box input {
+        font-size: 12px;
+    }
+
+    nav .user {
+        margin-right: 15px;
+    }
+
+    nav .user img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .barra-lateral {
+        width: 260px;
+    }
+
+    .pagina-ranking {
+        padding:
+            100px 5% 40px;
+    }
+
+    .titulo-ranking h1 {
+        font-size: 36px;
+    }
+
+    .titulo-ranking p {
+        font-size: 16px;
+    }
+
+    .empresa {
+        gap: 12px;
+
+        padding: 16px;
+    }
+
+    .medalha {
+        width: 42px;
+        height: 42px;
+
+        font-size: 14px;
+    }
+
+    .empresa-info h3 {
+        font-size: 18px;
+    }
+
+    .empresa-info > span {
+        font-size: 12px;
+    }
+
+    .pontos strong {
+        font-size: 24px;
+    }
+
+    .pontos span {
+        font-size: 11px;
+    }
+
+    .explicacao-ranking {
+        padding: 22px;
+    }
+
+}
+
+
+
+
+
+
+/* ================================================= */
+/* PÁGINA DE DENÚNCIAS */
+/* ================================================= */
+
+.pagina-denuncias {
+    padding: 120px 8% 80px;
+
+    max-width: 1200px;
+
+    margin: 0 auto;
+}
+
+
+/* ================================================= */
+/* CABEÇALHO */
+/* ================================================= */
+
+.denuncias-header {
+    margin-bottom: 45px;
+}
+
+.denuncias-header > span {
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    color: #008f08;
+}
+
+.denuncias-header h1 {
+    margin: 8px 0 12px;
+
+    font-size: 48px;
+
+    color: #222;
+}
+
+.denuncias-header p {
+    max-width: 720px;
+
+    margin: 0;
+
+    font-size: 18px;
+
+    line-height: 1.6;
+
+    color: #666;
+}
+
+
+/* ================================================= */
+/* FORMULÁRIO */
+/* ================================================= */
+
+.box-denuncia {
+    padding: 35px;
+
+    background: white;
+
+    border: 1px solid #e5e5e5;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.06);
+}
+
+.titulo-box {
+    margin-bottom: 30px;
+}
+
+.titulo-box h2 {
+    margin: 0 0 7px;
+
+    font-size: 29px;
+
+    color: #222;
+}
+
+.titulo-box p {
+    margin: 0;
+
+    color: #777;
+}
+
+.box-denuncia form {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 22px;
+}
+
+.campo {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 8px;
+}
+
+.campo-largo,
+.btn-enviar-denuncia {
+    grid-column: 1 / -1;
+}
+
+.campo label {
+    font-size: 14px;
+
+    font-weight: bold;
+
+    color: #333;
+}
+
+.campo input,
+.campo select,
+.campo textarea {
+    width: 100%;
+
+    padding: 13px 15px;
+
+    border: 1px solid #d8d8d8;
+
+    border-radius: 9px;
+
+    background: #fafafa;
+
+    font-size: 15px;
+
+    font-family: inherit;
+
+    outline: none;
+}
+
+.campo textarea {
+    min-height: 140px;
+
+    resize: vertical;
+}
+
+
+/* ================================================= */
+/* ÁREA DEMONSTRATIVA DE ANEXO */
+/* ================================================= */
+
+.upload-area {
+    min-height: 120px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 6px;
+
+    padding: 20px;
+
+    border: 2px dashed #c9d9c9;
+
+    border-radius: 12px;
+
+    background: #f7fbf7;
+
+    text-align: center;
+}
+
+.upload-area span {
+    color: #008f08;
+
+    font-size: 15px;
+
+    font-weight: bold;
+}
+
+.upload-area small {
+    color: #888;
+
+    font-size: 12px;
+}
+
+
+/* ================================================= */
+/* BOTÃO */
+/* ================================================= */
+
+.btn-enviar-denuncia {
+    padding: 14px 25px;
+
+    border: none;
+
+    border-radius: 9px;
+
+    background: #008f08;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: default;
+}
+
+
+/* ================================================= */
+/* ASSISTENTE */
+/* ================================================= */
+
+.assistente-ecofab {
+    margin-top: 45px;
+
+    padding: 30px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #f2faf2,
+            #ffffff
+        );
+
+    border: 1px solid #dceadc;
+
+    border-radius: 20px;
+}
+
+.assistente-header {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+.assistente-header > div:first-child > span {
+    font-size: 11px;
+
+    font-weight: bold;
+
+    letter-spacing: 1.5px;
+
+    color: #008f08;
+}
+
+.assistente-header h2 {
+    margin: 6px 0 0;
+
+    font-size: 28px;
+
+    color: #222;
+}
+
+.status-assistente {
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    font-size: 13px;
+
+    color: #4b7a4b;
+}
+
+.status-assistente span {
+    width: 8px;
+
+    height: 8px;
+
+    border-radius: 50%;
+
+    background: #35a83b;
+}
+
+.assistente-descricao {
+    margin: 10px 0 20px;
+
+    color: #666;
+}
+
+
+/* ================================================= */
+/* CHAT */
+/* ================================================= */
+
+.chat-box {
+    height: 240px;
+
+    padding: 20px;
+
+    overflow-y: auto;
+
+    background: white;
+
+    border: 1px solid #e0e0e0;
+
+    border-radius: 14px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+.mensagem {
+    max-width: 75%;
+
+    padding: 12px 15px;
+
+    border-radius: 14px;
+
+    line-height: 1.5;
+}
+
+.mensagem strong {
+    display: block;
+
+    margin-bottom: 4px;
+
+    font-size: 13px;
+}
+
+.mensagem p {
+    margin: 0;
+
+    font-size: 14px;
+}
+
+.mensagem-ia {
+    align-self: flex-start;
+
+    background: #edf7ed;
+
+    border-bottom-left-radius: 4px;
+}
+
+.mensagem-usuario {
+    align-self: flex-end;
+
+    background: #008f08;
+
+    color: white;
+
+    border-bottom-right-radius: 4px;
+}
+
+
+/* ================================================= */
+/* CAMPO DO CHAT */
+/* ================================================= */
+
+.chat-input {
+    display: flex;
+
+    gap: 10px;
+
+    margin-top: 15px;
+}
+
+.chat-input input {
+    flex: 1;
+
+    padding: 13px 15px;
+
+    border: 1px solid #d8d8d8;
+
+    border-radius: 10px;
+
+    outline: none;
+
+    font-size: 14px;
+}
+
+.chat-input button {
+    width: 48px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: #008f08;
+
+    color: white;
+
+    font-size: 20px;
+
+    cursor: default;
+}
+
+
+/* ================================================= */
+/* MINHAS DENÚNCIAS */
+/* ================================================= */
+
+.minhas-denuncias {
+    margin-top: 50px;
+}
+
+.titulo-minhas {
+    margin-bottom: 25px;
+}
+
+.titulo-minhas > span {
+    font-size: 11px;
+
+    font-weight: bold;
+
+    letter-spacing: 1.5px;
+
+    color: #008f08;
+}
+
+.titulo-minhas h2 {
+    margin: 7px 0;
+
+    font-size: 30px;
+
+    color: #222;
+}
+
+.titulo-minhas p {
+    margin: 0;
+
+    color: #666;
+}
+
+.lista-minhas {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+.minha-denuncia {
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+
+    padding: 20px;
+
+    background: white;
+
+    border: 1px solid #e4e4e4;
+
+    border-radius: 14px;
+}
+
+.codigo-denuncia {
+    min-width: 55px;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    color: #008f08;
+}
+
+.info-denuncia {
+    flex: 1;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 4px;
+}
+
+.info-denuncia h3 {
+    margin: 0;
+
+    font-size: 18px;
+
+    color: #222;
+}
+
+.info-denuncia span {
+    font-size: 14px;
+
+    color: #666;
+}
+
+.info-denuncia small {
+    font-size: 12px;
+
+    color: #999;
+}
+
+
+/* ================================================= */
+/* STATUS */
+/* ================================================= */
+
+.status-denuncia {
+    padding: 7px 12px;
+
+    border-radius: 20px;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    white-space: nowrap;
+}
+
+.analise-status {
+    background: #fff3cd;
+
+    color: #8a6500;
+}
+
+.andamento-status {
+    background: #dbeafe;
+
+    color: #2457a6;
+}
+
+.resolvido-status {
+    background: #dcfce7;
+
+    color: #17753b;
+}
+
+
+/* ================================================= */
+/* RESPONSIVIDADE */
+/* ================================================= */
+
+@media (max-width: 800px) {
+
+    .pagina-denuncias {
+        padding:
+            110px 5% 60px;
+    }
+
+    .denuncias-header h1 {
+        font-size: 38px;
+    }
+
+    .box-denuncia form {
+        grid-template-columns: 1fr;
+    }
+
+    .campo-largo,
+    .btn-enviar-denuncia {
+        grid-column: auto;
+    }
+
+    .minha-denuncia {
+        flex-wrap: wrap;
+
+        align-items: flex-start;
+    }
+
+}
+
+
+@media (max-width: 550px) {
+
+    .denuncias-header h1 {
+        font-size: 32px;
+    }
+
+    .denuncias-header p {
+        font-size: 16px;
+    }
+
+    .box-denuncia,
+    .assistente-ecofab {
+        padding: 22px;
+    }
+
+    .assistente-header {
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        gap: 10px;
+    }
+
+    .chat-box {
+        height: 220px;
+    }
+
+    .mensagem {
+        max-width: 90%;
+    }
+
+    .minha-denuncia {
+        gap: 12px;
+    }
+
+    .status-denuncia {
+        width: 100%;
+
+        text-align: center;
+    }
+
+}
+
+
+
+
+
+
+/* ================================================= */
+/* PÁGINA DE SOLUÇÕES */
+/* ================================================= */
+
+.pagina-solucoes {
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    padding: 120px 8% 80px;
+}
+
+
+/* ================================================= */
+/* CABEÇALHO */
+/* ================================================= */
+
+.solucoes-header {
+    margin-bottom: 50px;
+}
+
+.solucoes-header > span {
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    color: #008f08;
+}
+
+.solucoes-header h1 {
+    max-width: 800px;
+
+    margin: 8px 0 12px;
+
+    font-size: 48px;
+
+    line-height: 1.1;
+
+    text-transform: uppercase;
+
+    color: #222;
+}
+
+.solucoes-header p {
+    max-width: 700px;
+
+    margin: 0;
+
+    font-size: 18px;
+
+    line-height: 1.6;
+
+    color: #666;
+}
+
+
+/* ================================================= */
+/* ETAPAS */
+/* ================================================= */
+
+.etapas-sustentaveis {
+    position: relative;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 20px;
+
+    margin-bottom: 55px;
+}
+
+.linha-etapas {
+    position: absolute;
+
+    top: 25px;
+    left: 12%;
+
+    width: 76%;
+
+    height: 3px;
+
+    background: #cfe0cf;
+
+    z-index: 0;
+}
+
+.etapa-sustentavel {
+    position: relative;
+
+    z-index: 1;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    text-align: center;
+}
+
+.numero-etapa {
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #008f08;
+
+    color: white;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    box-shadow:
+        0 4px 10px
+        rgba(0, 143, 8, 0.18);
+}
+
+.etapa-sustentavel h3 {
+    margin: 13px 0 0;
+
+    font-size: 17px;
+
+    color: #333;
+}
+
+
+/* ================================================= */
+/* CARDS */
+/* ================================================= */
+
+.cards-solucoes {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 25px;
+}
+
+.card-solucao {
+    display: flex;
+
+    min-height: 250px;
+
+    padding: 28px;
+
+    background: white;
+
+    border:
+        1px solid #e4e4e4;
+
+    border-radius: 18px;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.card-solucao:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 10px 25px
+        rgba(0, 0, 0, 0.08);
+}
+
+
+/* ÍCONE */
+
+.icone-solucao {
+    width: 65px;
+    height: 65px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    margin-right: 22px;
+
+    border-radius: 18px;
+
+    background: #eaf6ea;
+
+    color: #008f08;
+
+    font-size: 31px;
+}
+
+
+/* CONTEÚDO */
+
+.conteudo-card {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+}
+
+.conteudo-card > span {
+    font-size: 11px;
+
+    font-weight: bold;
+
+    letter-spacing: 1.5px;
+
+    color: #008f08;
+}
+
+.conteudo-card h2 {
+    margin: 5px 0 8px;
+
+    font-size: 27px;
+
+    color: #222;
+}
+
+.conteudo-card p {
+    max-width: 450px;
+
+    margin: 0 0 18px;
+
+    font-size: 15px;
+
+    line-height: 1.6;
+
+    color: #666;
+}
+
+.conteudo-card button {
+    margin-top: auto;
+
+    padding: 9px 16px;
+
+    border:
+        1px solid #008f08;
+
+    border-radius: 8px;
+
+    background: transparent;
+
+    color: #008f08;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s,
+        color 0.2s;
+}
+
+.conteudo-card button:hover {
+    background: #008f08;
+
+    color: white;
+}
+
+
+/* ================================================= */
+/* DESTAQUE DO DIA */
+/* ================================================= */
+
+.destaque-dia {
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
+
+    margin-top: 40px;
+
+    padding: 30px;
+
+    border-radius: 18px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #f3faf3,
+            #e9f6e9
+        );
+
+    border:
+        1px solid #dceadc;
+}
+
+.destaque-icone {
+    width: 70px;
+    height: 70px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 18px;
+
+    background: #008f08;
+
+    color: white;
+
+    font-size: 30px;
+}
+
+.destaque-texto > span {
+    font-size: 11px;
+
+    font-weight: bold;
+
+    letter-spacing: 1.5px;
+
+    color: #008f08;
+}
+
+.destaque-texto h2 {
+    margin: 5px 0 5px;
+
+    font-size: 25px;
+
+    color: #222;
+}
+
+.destaque-texto p {
+    max-width: 800px;
+
+    margin: 0;
+
+    font-size: 15px;
+
+    line-height: 1.6;
+
+    color: #555;
+}
+
+
+/* ================================================= */
+/* RESPONSIVIDADE */
+/* ================================================= */
+
+@media (max-width: 850px) {
+
+    .pagina-solucoes {
+        padding:
+            110px 5% 60px;
+    }
+
+    .solucoes-header h1 {
+        font-size: 40px;
+    }
+
+    .etapas-sustentaveis {
+        grid-template-columns:
+            repeat(2, 1fr);
+
+        gap: 30px;
+    }
+
+    .linha-etapas {
+        display: none;
+    }
+
+    .cards-solucoes {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media (max-width: 550px) {
+
+    .pagina-solucoes {
+        padding:
+            100px 5% 50px;
+    }
+
+    .solucoes-header h1 {
+        font-size: 32px;
+    }
+
+    .solucoes-header p {
+        font-size: 16px;
+    }
+
+    .etapas-sustentaveis {
+        grid-template-columns: 1fr 1fr;
+
+        gap: 20px;
+    }
+
+    .etapa-sustentavel h3 {
+        font-size: 15px;
+    }
+
+    .card-solucao {
+        padding: 22px;
+
+        flex-direction: column;
+    }
+
+    .icone-solucao {
+        margin-right: 0;
+        margin-bottom: 18px;
+    }
+
+    .destaque-dia {
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        padding: 22px;
+    }
+
+}
+
+
+
+
+
+
+
+/* =========================================
+   PÁGINA DE METAS
+========================================= */
+
+.pagina-metas {
+
+    width: 100%;
+
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    padding: 120px 8% 80px;
+
+}
+
+
+/* =========================================
+   CABEÇALHO
+========================================= */
+
+.metas-header {
+
+    margin-bottom: 50px;
+
+}
+
+
+.titulo-metas {
+
+    max-width: 800px;
+
+}
+
+
+/* TEXTO PEQUENO VERDE */
+
+.titulo-metas > span {
+
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    color: #008f08;
+
+}
+
+
+/* TÍTULO PRINCIPAL */
+
+.titulo-metas h1 {
+
+    margin: 8px 0 12px;
+
+    font-size: 48px;
+
+    line-height: 1.1;
+
+    color: #222;
+
+}
+
+
+/* DESCRIÇÃO */
+
+.titulo-metas p {
+
+    max-width: 700px;
+
+    margin: 0;
+
+    font-size: 18px;
+
+    line-height: 1.6;
+
+    color: #666;
+
+}
+
+
+/* =========================================
+   RESUMO DAS METAS
+========================================= */
+
+.metas-resumo {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+
+    margin-bottom: 38px;
+
+}
+
+
+.meta-resumo-card {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    padding: 22px;
+
+    background: rgba(255, 255, 255, 0.85);
+
+    border: 1px solid rgba(70, 100, 72, 0.15);
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 5px 18px rgba(40, 60, 42, 0.06);
+
+}
+
+
+.meta-resumo-numero {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: 55px;
+
+    height: 55px;
+
+    flex-shrink: 0;
+
+    border-radius: 10px;
+
+    background: #e2ecdf;
+
+    color: #416d45;
+
+    font-size: 25px;
+
+    font-weight: bold;
+
+}
+
+
+.meta-resumo-texto {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 4px;
+
+}
+
+
+.meta-resumo-texto strong {
+
+    color: #334536;
+
+    font-size: 16px;
+
+}
+
+
+.meta-resumo-texto span {
+
+    color: #7b827c;
+
+    font-size: 13px;
+
+}
+
+
+/* =========================================
+   FILTROS
+========================================= */
+
+.metas-filtros {
+
+    display: flex;
+
+    gap: 28px;
+
+    margin-bottom: 22px;
+
+    border-bottom: 1px solid #dce2da;
+
+}
+
+
+.filtro-meta {
+
+    position: relative;
+
+    padding: 0 3px 12px;
+
+    border: none;
+
+    background: transparent;
+
+    font-family: inherit;
+
+    font-size: 15px;
+
+    color: #777e78;
+
+    cursor: pointer;
+
+}
+
+
+.filtro-meta::after {
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+
+    bottom: -1px;
+
+    width: 0;
+
+    height: 3px;
+
+    background: #5b8a5d;
+
+    border-radius: 5px;
+
+    transition: 0.25s;
+
+}
+
+
+.filtro-meta:hover {
+
+    color: #4f7e53;
+
+}
+
+
+.filtro-meta.ativo {
+
+    color: #416d45;
+
+    font-weight: bold;
+
+}
+
+
+.filtro-meta.ativo::after {
+
+    width: 100%;
+
+}
+
+
+/* =========================================
+   LISTA DE METAS
+========================================= */
+
+.lista-metas {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 17px;
+
+}
+
+
+/* =========================================
+   CARD DA META
+========================================= */
+
+.card-meta {
+
+    padding: 25px 28px;
+
+    background: rgba(255, 255, 255, 0.88);
+
+    border: 1px solid #dce3da;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 5px 18px rgba(35, 55, 38, 0.05);
+
+    transition:
+        transform 0.2s,
+        box-shadow 0.2s;
+
+}
+
+
+.card-meta:hover {
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 9px 23px rgba(35, 55, 38, 0.09);
+
+}
+
+
+/* =========================================
+   TOPO DO CARD
+========================================= */
+
+.card-meta-topo {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-bottom: 18px;
+
+}
+
+
+.meta-nome {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 13px;
+
+}
+
+
+.meta-icone {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: 43px;
+
+    height: 43px;
+
+    flex-shrink: 0;
+
+    border-radius: 9px;
+
+    background: #e5eee2;
+
+    color: #4c7b50;
+
+    font-size: 21px;
+
+}
+
+
+.meta-nome h2 {
+
+    margin: 0;
+
+    color: #2e3d31;
+
+    font-size: 17px;
+
+}
+
+
+.meta-nome span {
+
+    display: block;
+
+    margin-top: 4px;
+
+    color: #818881;
+
+    font-size: 13px;
+
+}
+
+
+.meta-percentual {
+
+    color: #4f8053;
+
+    font-size: 20px;
+
+}
+
+
+/* =========================================
+   BARRA DE PROGRESSO
+========================================= */
+
+.meta-barra {
+
+    width: 100%;
+
+    height: 9px;
+
+    margin-bottom: 17px;
+
+    overflow: hidden;
+
+    background: #e1e6df;
+
+    border-radius: 20px;
+
+}
+
+
+.meta-progresso {
+
+    height: 100%;
+
+    border-radius: 20px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #4e7e52,
+            #78a873
+        );
+
+    transition: width 0.7s ease;
+
+}
+
+
+/* =========================================
+   DESCRIÇÃO
+========================================= */
+
+.meta-descricao {
+
+    margin: 0 0 13px;
+
+    color: #626a63;
+
+    font-size: 14px;
+
+}
+
+
+/* =========================================
+   RESULTADOS
+========================================= */
+
+.meta-resultados {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    color: #858b86;
+
+    font-size: 13px;
+
+}
+
+
+.meta-resultados strong {
+
+    color: #4e7e52;
+
+}
+
+
+/* =========================================
+   FILTRO
+========================================= */
+
+.card-meta.oculto {
+
+    display: none;
+
+}
+
+
+/* =========================================
+   RESPONSIVIDADE
+========================================= */
+
+@media (max-width: 900px) {
+
+    .pagina-metas {
+
+        width: 100%;
+
+        margin: 0 auto;
+
+        padding: 110px 5% 60px;
+
+    }
+
+
+    .metas-resumo {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .pagina-metas {
+
+        padding: 100px 5% 50px;
+
+    }
+
+
+    .titulo-metas h1 {
+
+        font-size: 34px;
+
+    }
+
+
+    .titulo-metas p {
+
+        font-size: 16px;
+
+    }
+
+
+    .card-meta {
+
+        padding: 20px;
+
+    }
+
+
+    .meta-resultados {
+
+        flex-direction: column;
+
+        gap: 5px;
+
+    }
+
+}
+
+
+
+
+
+#btnTopo {
+    position: fixed;
+    right: 28px;
+    bottom: 28px;
+
+    width: 52px;
+    height: 52px;
+
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0;
+    border: 1px solid #d9e3d9;
+    border-radius: 50%;
+
+    background: white;
+    color: #038509;
+
+    cursor: pointer;
+    z-index: 9999;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        background-color 0.25s ease;
+}
+
+#btnTopo svg {
+    width: 21px;
+    height: 21px;
+
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+#btnTopo:hover {
+    background-color: #038509;
+    color: white;
+
+    transform: translateY(-4px);
+
+    box-shadow: 0 7px 20px rgba(0, 0, 0, 0.18);
+}
+
+#btnTopo:active {
+    transform: translateY(-1px);
+}
+
+
+
+
+
+
+.icones-redes {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.icones-redes img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+    transition: 0.2s ease;
+}
+
+.icones-redes a:hover img {
+    transform: translateY(-3px);
+}
+
+
+
+
+.direitos {
+    color: white;
+    text-align: center;
+}
+
+.espaco {
+    height: 80px;
+}
+
+
+
+
+.btn-todas-denuncias {
+    text-decoration: none !important;
+}
+
+
+
+.btn-todas-denuncias {
+    display: block;
+    width: fit-content;
+
+    margin: 30px auto 0 !important;
+
+    padding: 12px 28px;
+
+    background: #038509;
+    color: white;
+
+    border-radius: 8px;
+
+    text-decoration: none !important;
+    font-weight: 600;
+
+    transition: 0.2s ease;
+}
